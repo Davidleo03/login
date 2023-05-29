@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(150deg, #480279, #09f, #00DDFF);
+    animation: cambiar 10s ease infinite;
+    background-size: 200% 200%;
+}
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    height: 100%;
+    margin-top: 20%;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    border: solid white;
+}
+
+.item {
+    margin-left: 4%;
+}
+
+header {
+    margin-left: 10%;
+    color: black;
+    margin-top: 10px;
+}
+
+@keyframes cambiar {
+    0% {background-position: 0 50%;}
+    50% {background-position: 100 50%;}
+    100% {background-position: 0 50%;}
+
+}
+
+.alert {
+    display: inline;
+}
+
+
+
+
