@@ -9,6 +9,9 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(cookieParser('Secreto'));
 
+app.use('resourses', express.static('public'));
+app.use('/resources', express.static(__dirname + '/public'));
+
 app.use(session({
     secret : 'Secreto',
     resave : true,
